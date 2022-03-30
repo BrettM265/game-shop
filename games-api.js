@@ -2,13 +2,13 @@ const gameList = [{
     id:1,
     title:"BattleField BC2",
     price: 2.00,
-    image:"/imgs/BFBC2.jpg",
+    image:"./game-shop/imgs/BFBC2.jpg",
     console:"Xbox360"
 },{
     id:2,
     title:"Dark Souls",
     price: 15.00,
-    image:"/imgs/DS1.jpg",
+    image:"./game-shop/DS1.jpg",
     console:"PS3 XboxOne PC PS4 Xbox360"
 },{
     id:3,
