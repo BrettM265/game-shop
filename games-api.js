@@ -32,7 +32,7 @@ const gameList = [{
     id:6,
     title:"Dragon Age IQ",
     price: 10.00,
-    image:"/imgs/DAI.jpg",
+    image:"/DAI.jpg",
     console:"PS3 XboxOne PC PS4 Xbox360"
 },{
     id:7,
