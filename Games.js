@@ -1,16 +1,41 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import gameList from './games-api'
+
 
 const Games = () => {
   const [data]=useState(gameList);
   const [priceFilter, setPricefilter] = useState()
   const [consoleFilter, setConsolefilter] = useState()
+  const [cartProducts, setProduct] = useState([])
 
   let filteredData = data
 
   filteredData = priceFilter ? filteredData.filter(game=> game.price >= priceFilter.min && game.price <= priceFilter.max) : filteredData
 
   filteredData = consoleFilter ? filteredData.filter(game=> game.console.includes(consoleFilter)) : filteredData
+
+  const clearFilter = () =>{
+    window.location.reload();
+  }
+
+  const productArray = "productList"
+
+useEffect(()=> {
+  const storedProducts = JSON.parse(localStorage.getItem(productArray))
+  if (storedProducts) setProduct(storedProducts)
+},[])
+
+useEffect (() => {
+localStorage.setItem(productArray, JSON.stringify(cartProducts))
+}, [cartProducts])
+
+  function addProduct(id) {
+    let name = data[id].title
+    let price = data[id].price
+    let image = data[id].image
+    setProduct(prevProduct => {
+      return ([...prevProduct, {name:name, price:price, image: image}])
+    })}
 
   return (
     <>
@@ -47,9 +72,10 @@ const Games = () => {
     <input className="price-checkbox" type="radio" value="Xbox" name="Console" id = "pcb" onClick={()=>setConsolefilter('Xbox')} ></input>
     <label>Xbox</label><br />
     </form>
-    </div>
-    </div>
 
+    <button className="clearAll" onClick={clearFilter}>Clear</button>
+    </div>
+    </div>
 
     <div className="products-container-main">
     <div className="products-container">
@@ -64,14 +90,14 @@ const Games = () => {
         <div className="product-info">
         <p className="product-title">{title}</p>
         <p className="price">${price.toFixed(2)}</p>
-        <button>Add To Cart</button>
+        <button className="product-button" onClick={()=>addProduct(id)}>Add To Cart</button>
         </div>
         </div>
         </div>
       </>
 
     )})}
-
+      
     </div>
     </div>
     </>
