@@ -33,8 +33,10 @@ localStorage.setItem(productArray, JSON.stringify(cartProducts))
     let name = data[id].title
     let price = data[id].price
     let image = data[id].image
+    let quantity = 1
+    let key = data[id].id
     setProduct(prevProduct => {
-      return ([...prevProduct, {name:name, price:price, image: image}])
+      return ([...prevProduct, {key:key, name:name, price:price, image: image, quantity: quantity}])
     })}
 
   return (
