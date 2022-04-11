@@ -6,7 +6,11 @@ const productArray = "productList"
 let storedProducts = JSON.parse(localStorage.getItem(productArray))
 
 function openCart(){
+  if(document.getElementById("cpl").style.display !== "block"){
 document.getElementById("cpl").style.display = "block"
+  }else{
+    document.getElementById("cpl").style.display = "none"
+  }
 }
 
 const clearAll = () =>  {
@@ -31,6 +35,7 @@ return(
     </div>
     <div className="cart-right">
     <p>${products.price}</p>
+    <p>{products.quantity}</p>
     <input
     type="value"
     id="amount"
