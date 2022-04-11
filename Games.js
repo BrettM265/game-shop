@@ -29,15 +29,25 @@ useEffect (() => {
 localStorage.setItem(productArray, JSON.stringify(cartProducts))
 }, [cartProducts])
 
+
   function addProduct(id) {
+
+    let existingProduct = cartProducts.find(i => i.id == id)
+
+if(existingProduct){
+existingProduct.quantity++
+let otherItems = cartProducts.filter(i => i.id !== id)
+setProduct([...otherItems, existingProduct])
+
+}else{
     let name = data[id].title
     let price = data[id].price
     let image = data[id].image
-    let quantity = 1
-    let key = data[id].id
+
     setProduct(prevProduct => {
-      return ([...prevProduct, {key:key, name:name, price:price, image: image, quantity: quantity}])
-    })}
+      return ([...prevProduct, {id:id, name:name, price:price, image: image, quantity: 1}])
+  });console.log(cartProducts)
+}}
 
   return (
     <>
