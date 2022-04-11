@@ -119,3 +119,50 @@ input:hover{
 .filter-2{
   font-size: 1.3em;
 }
+
+.cart-accordian{
+  float:right;
+  position:fixed; right:0;
+}
+
+.cart-button{
+  width:4vw;
+  border-radius: 75%;
+  height:4vw;
+  background-color: white;
+  font-weight: 800;
+  font-size: 1.2vw;
+}
+
+.cart-products-list{
+  display:none;
+  background-color: white;
+  width:20vw;
+  min-height:500px;
+  box-shadow: 0px 0px 3px black;
+  color:black;
+  overflow: scroll;
+  max-height:600px;
+}
+.sideBar-products{
+  display:block;
+}
+.cart-product-details{
+font-size:12px;
+}
+
+.sideBar-products{
+display: flex;
+padding: 10px 0px;
+}
+
+.cart-left{
+  width:50%;
+}
+
+.cart-right{
+  width:50%;
+}
+.cart-image{
+  height: 6vw;
+}
