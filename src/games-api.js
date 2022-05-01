@@ -3,7 +3,7 @@ const gameList = [{
     title:"WoW",
     searchterm:"World of Warcraft WoW",
     price: 15.00,
-    image:"./imgs/WoW.jpg",
+    image:"./imgs/Wow.jpg",
     console:"PC"
 },{
     id:1,
