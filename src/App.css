@@ -1,0 +1,352 @@
+
+:root{
+  --fs-head-header: 3.8rem;
+  --fs-head-under: 2.8rem;
+  --fs-head-bias: 1.2rem;
+  --fs-prod-info: 1.5rem;
+  --fs-sidebar-list: 1.5rem;
+  --fs-sidebar-header: 1.6rem;
+  --product-filter-button-fs: .8rem;
+  --product-filter-searchbar-fs: 1.2rem;
+}
+@media (max-width: 1280px) {
+  :root{
+    --fs-prod-info: 1.2rem;
+    --fs-sidebar-list: 1.2rem;
+    --fs-sidebar-header: 1.2rem;
+    --product-filter-button-fs: .8rem;
+    --product-filter-searchbar-fs: 1.1rem;
+  }
+
+}@media (max-width: 992px){
+  :root{
+    --fs-head-header: 2.8rem;
+    --fs-head-under: 1.8rem;
+    --fs-prod-info: 1.1rem;
+    --fs-sidebar-list: 1.0rem;
+    --fs-sidebar-header: 1.1rem;
+    --product-filter-button-fs: .8rem;
+    --product-filter-searchbar-fs: .8rem;
+  }
+}
+@media (max-width: 600px){
+  :root{
+    --fs-head-header: 2.0rem;
+    --fs-head-under: 1.2rem;
+    --fs-head-bias: .8rem;
+}}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+.store-home {
+  text-align: center;
+  min-height: 16vh;
+}
+
+.store-head{
+  background-image: url("game-imgs/Storefront.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:38vh;
+  justify-content: center;
+  display: block;
+  color: rgb(253, 253, 253);
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+.store-heading{
+  padding: 5vh 0;
+  font-size: var(--fs-head-header);
+}
+.store-heading-under{
+  font-size: var(--fs-head-under);
+}
+.header-ps{
+  font-size:var(--fs-head-bias);
+}
+.body-container{
+  max-width:1740px;
+  display:flex;
+}
+.filter-container{
+  min-width:17%;
+  height:auto;
+  background-color: #ffffff;
+  position: sticky; top:70px;
+  height: 100%;
+  padding-right:5%;
+}
+
+.products-container{
+  display:flex;
+  flex-wrap: wrap;
+  min-width:70vw;
+  max-width:70vw;
+  min-height:80vh;
+  padding-bottom:50px;
+}
+
+.row{
+  min-width:20%;
+  overflow-wrap: break-word;
+  padding: 50px 0 0 0;
+}
+.row-item{
+  box-shadow: 0px 0px 10px rgb(204, 203, 203);
+  border-radius: 3px;
+  margin: 0px auto;
+  width:80%;
+  padding-top:10px;
+}
+.row-item:hover{
+  box-shadow: 0px 0px 10px black;
+}
+
+.product-img{
+  display:block;
+  margin: 0 auto;
+  height: 16vh;
+  width:60%;
+  box-shadow: 0px 0px 3px black;
+}
+.product-info{
+  text-align:center;
+  font-weight:600;
+  font-size:var(--fs-prod-info);
+  padding:10px 0 15px 0;
+}
+.price{
+  padding:10px 0px;
+}
+.add-button{
+  background-color: rgb(238, 237, 237);
+  border-radius:5px;
+  width:45%;
+  height:40px;
+  font-weight: 700;
+}
+.remove-buttom{
+  text-decoration:underline;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+label{
+  padding-left:5%;
+}
+
+input:hover{
+  cursor: pointer;
+}
+
+.filters{
+  margin:50px 0 0 4vw;
+  font-size: var(--fs-sidebar-list);
+}
+
+.filter-1{
+  padding-bottom: 30%;
+}
+
+.filter-header{
+  margin-bottom: 10%;
+  border-bottom: 2px solid rgb(170, 170, 170);
+  font-size:var(--fs-sidebar-header)
+}
+
+.search-bar-container{
+  background-color: rgb(253, 253, 253);
+  margin-top:-10px;
+  margin-bottom:5px;
+  box-shadow: 1px 1px 1px rgb(116, 116, 116);
+  position: sticky; top:0px;
+  height:5vh;
+  padding:10px;
+  overflow:visible;
+  display: flex;
+  font-size:var(--product-filter-searchbar-fs);
+  }
+  .searchbar-portfolio{
+    color:black;
+    padding:15px 0 0 20px;
+  }
+.search-bar{
+  font-size:var(--product-filter-searchbar-fs);
+  background-color: rgb(243, 243, 243);
+  width:50%;
+  margin: 0 auto;
+  margin-top:5px;
+  padding-top:5px;
+  text-indent: 30px;
+ }
+
+.cart-icon{
+  padding:5px 20px 0 0;
+  width:70px;
+}
+.cart-button{
+  background-color: rgb(255, 255, 255);
+}
+
+.cart-products-list{
+  display:none;
+  background-color: white;
+  min-width:300px;
+  min-height:500px;
+  box-shadow: 0px 0px 3px black;
+  color:black;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height:600px;
+  position:fixed; right:0; top:10px;
+  text-align: center;
+}
+
+.cart-product-details{
+font-size:1rem;
+padding-bottom:5px;
+}
+
+.sideBar-products{
+display: flex;
+margin:20px 0 20px 0;
+border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.cart-left{
+  padding: 0 10px;
+  width:40%;
+}
+
+.cart-right{
+  display:flex;
+  width:40%;
+}
+
+.cart-image{
+  height: 12vh;
+}
+
+.product-cart-counter{
+  display:flex;
+  justify-content: center;
+  font-size:1.2rem;
+  padding-top:0px;
+}
+
+.quantity-button{
+  width: 20px;
+  background-color: rgb(253, 253, 253);
+  font-size:1rem;
+  height:1.9em;
+  margin:0 10px;
+}
+.cart-product-totals{
+  min-width:30%;
+}
+.price-cart{
+position:fixed; right:30px;
+}
+
+.product-cart-close{
+  width:30px;
+  display: block;
+  background-color: rgb(231, 231, 231);
+  height:25px;
+}
+.clearAll{
+  margin: 30px 0 0 0;
+}
+.checkout{
+  color:black;
+}
+
+
+@media screen and (max-width: 1280px){
+  .row{
+    min-width:25%;
+  }
+  .product-img{
+    height: 14vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .product-img{
+    height: 11vh;
+  }
+  .filter-container{
+    width:45%;
+  }
+  .store-head{
+    height:300px;
+    background-size: cover;
+  }
+  .store-heading{
+    padding: 5vh 0 3vh 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .products-container-main{
+    width:70%;
+  }
+  .products-container{
+    border: 0px;
+  }
+  .product-img{
+    height: 15vh;
+  }
+  .row{
+    min-width:50%;
+    max-width:50%;
+    padding:0px;
+  }
+  .row-item{
+    box-shadow: 0px 0px 0px rgb(204, 203, 203);
+    border-radius: 3px;
+    margin: 0px auto;
+    width:100%;
+    padding-top:10px;
+  }
+  .filter-container{
+    width:45%;
+    padding-right: 0px;
+  }
+  .row-item:hover{
+    box-shadow: 0px 0px 0px black;
+  }
+  .price-checkbox{
+    margin-bottom: 10px;
+  }
+  .filter-container{
+    top:0px;
+  }
+  .filters{
+    margin:10px 0 0 4vw;
+  }
+  .cart-products-list{
+  min-width:100px;
+  
+  }
+  .cart-icon{
+    padding:5px 0px 0 0;
+    width:50px;
+  }
+  .searchbar-portfolio{
+    color:black;
+    padding:15px 0 0 0px;
+  }
+  .store-head{
+    height:200px;
+    background-size: cover;
+  }
+  .store-heading{
+    padding: 3vh 0;
+  }
+}
