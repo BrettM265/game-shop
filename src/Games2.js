@@ -89,7 +89,7 @@ function openCart(){
     return(
     <>
     <div className="search-bar-container">
-    <a href="https://brettm265.github.io/Portfolio/" className="searchbar-portfolio">&#60; Back to Portfolio</a>
+    <a href="https://brettm265.github.io/Portfolio/" className="searchbar-portfolio">&#60; Portfolio</a>
     <input className="search-bar" type="text" placeholder="Search by Name" onChange={e => setSearchfilter(e.target.value)}></input>
     
     <div className="cart-accordian">
