@@ -53,7 +53,6 @@
   background-image: url("game-imgs/Storefront.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:38vh;
   justify-content: center;
   display: block;
   color: rgb(253, 253, 253);
@@ -133,6 +132,7 @@
 }
 .remove-buttom{
   text-decoration:underline;
+  color:black;
 }
 
 button:hover{
@@ -168,7 +168,8 @@ input:hover{
   margin-bottom:5px;
   box-shadow: 1px 1px 1px rgb(116, 116, 116);
   position: sticky; top:0px;
-  height:5vh;
+  min-height:50px;
+  max-height:55px;
   padding:10px;
   overflow:visible;
   display: flex;
@@ -250,6 +251,7 @@ border-bottom: 1px solid rgb(214, 214, 214);
   font-size:1rem;
   height:1.9em;
   margin:0 10px;
+  color:black;
 }
 .cart-product-totals{
   min-width:30%;
@@ -259,6 +261,7 @@ border-bottom: 1px solid rgb(214, 214, 214);
   width:30px;
   display: block;
   background-color: rgb(231, 231, 231);
+  color:black;
   height:25px;
 }
 .clearAll{
@@ -282,10 +285,10 @@ border-bottom: 1px solid rgb(214, 214, 214);
     min-width:25%;
   }
   .product-img{
-    height: 14vh;
-    max-height:125px;
+    height: 140px;
   }
   .cart-image{
+    min-height:60px;
     max-height: 100px;
   }
   .filter-container{
@@ -318,8 +321,8 @@ border-bottom: 1px solid rgb(214, 214, 214);
     border: 0px;
   }
   .product-img{
-    height:15vh;
     min-height: 100px;
+    max-height: 120px;
   }
   .row{
     min-width:50%;
