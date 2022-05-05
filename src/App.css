@@ -125,6 +125,7 @@
 }
 .add-button{
   background-color: rgb(238, 237, 237);
+  color:black;
   border-radius:5px;
   width:45%;
   height:40px;
@@ -176,6 +177,7 @@ input:hover{
   .searchbar-portfolio{
     color:black;
     padding:15px 0 0 20px;
+    font-weight:600;
   }
 .search-bar{
   font-size:var(--product-filter-searchbar-fs);
@@ -260,9 +262,11 @@ border-bottom: 1px solid rgb(214, 214, 214);
   height:25px;
 }
 .clearAll{
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
   background-color: rgb(238, 237, 237);
+  color:black;
   border-radius:5px;
+  min-width:70px;
   width:45%;
   height:40px;
   font-weight: 700;
@@ -279,11 +283,20 @@ border-bottom: 1px solid rgb(214, 214, 214);
   }
   .product-img{
     height: 14vh;
+    max-height:125px;
+  }
+  .cart-image{
+    max-height: 100px;
+  }
+  .filter-container{
+    width:45%;
+    top:90px; 
   }
 }
 @media screen and (max-width: 992px) {
   .product-img{
     height: 11vh;
+    max-height: 100px;
   }
   .filter-container{
     width:45%;
@@ -305,7 +318,8 @@ border-bottom: 1px solid rgb(214, 214, 214);
     border: 0px;
   }
   .product-img{
-    height: 15vh;
+    height:15vh;
+    min-height: 100px;
   }
   .row{
     min-width:50%;
@@ -322,6 +336,7 @@ border-bottom: 1px solid rgb(214, 214, 214);
   .filter-container{
     width:45%;
     padding-right: 0px;
+    top: 70px;
   }
   .row-item:hover{
     box-shadow: 0px 0px 0px black;
@@ -329,15 +344,12 @@ border-bottom: 1px solid rgb(214, 214, 214);
   .price-checkbox{
     margin-bottom: 10px;
   }
-  .filter-container{
-    top:0px;
-  }
   .filters{
     margin:10px 0 0 4vw;
   }
   .cart-products-list{
-  min-width:100px;
-  
+  min-width:60%;
+  max-width:60%;
   }
   .cart-icon{
     padding:5px 0px 0 0;
