@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/game-shop/static/css/main.58c6f7ad.css",
-    "main.js": "/game-shop/static/js/main.e1e3aaf3.js",
+    "main.css": "/game-shop/static/css/main.443a8397.css",
+    "main.js": "/game-shop/static/js/main.bb423a10.js",
     "static/js/787.18185650.chunk.js": "/game-shop/static/js/787.18185650.chunk.js",
     "static/media/Storefront.jpg": "/game-shop/static/media/Storefront.77e445c197c06d5b03e0.jpg",
     "index.html": "/game-shop/index.html",
-    "main.58c6f7ad.css.map": "/game-shop/static/css/main.58c6f7ad.css.map",
-    "main.e1e3aaf3.js.map": "/game-shop/static/js/main.e1e3aaf3.js.map",
+    "main.443a8397.css.map": "/game-shop/static/css/main.443a8397.css.map",
+    "main.bb423a10.js.map": "/game-shop/static/js/main.bb423a10.js.map",
     "787.18185650.chunk.js.map": "/game-shop/static/js/787.18185650.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58c6f7ad.css",
-    "static/js/main.e1e3aaf3.js"
+    "static/css/main.443a8397.css",
+    "static/js/main.bb423a10.js"
   ]
 }
