@@ -198,7 +198,8 @@ input:hover{
 }
 .cart-button{
   background-color: rgb(255, 255, 255);
-  font-size:var(--cart-counter)
+  font-size:var(--cart-counter);
+  color:black;
 }
 
 .cart-products-list{

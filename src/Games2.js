@@ -93,7 +93,7 @@ function openCart(){
     <input className="search-bar" type="text" placeholder="Search by Name" onChange={e => setSearchfilter(e.target.value)}></input>
     
     <div className="cart-accordian">
-    <button className="cart-button" id ="cb" onClick={openCart}><img className="cart-icon" src="./imgs/cart-icon.jpg" />({cartProducts.length})</button>
+    <button className="cart-button" id ="cb" onClick={openCart}><img className="cart-icon" src="./imgs/cart-icon.jpg" /><p>({cartProducts.length})</p></button>
     </div>
     <div className="cart-products-list" id="cpl">
     <button className="product-cart-close" onClick={openCart}>X</button>
