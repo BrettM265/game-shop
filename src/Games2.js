@@ -123,7 +123,7 @@ function openCart(){
       </>
       )})}
       <p className="cart-product-details">{total ? `Total: $${total.toFixed(2)}` : "Cart is Empty"}</p>
-      <div className="checkout">{total ? <a className="checkout" href="google.com">Checkout</a> : ""}
+      <div className="checkout">{total ? <a className="checkout" href="#">Checkout</a> : ""}
       </div>
     </div>
      </div>
